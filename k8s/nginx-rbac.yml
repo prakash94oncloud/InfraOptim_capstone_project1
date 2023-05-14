@@ -18,7 +18,7 @@ metadata:
 subjects:
   - apiGroup: ""
     kind: User
-    name: infraadmin
+    name: winner
 roleRef:
     apiGroup: ""
     kind: Role
