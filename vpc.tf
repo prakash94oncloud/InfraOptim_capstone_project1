@@ -76,7 +76,7 @@ resource "aws_route_table_association" "public1" {
 
 resource "aws_subnet" "public1" {
   vpc_id            = aws_vpc.vpc.id
-  cidr_block        = "10.0.1.0/24"
+  cidr_block        = "10.1.1.0/24"
   availability_zone = data.aws_availability_zones.azs.names[0]
 
   tags = {
@@ -86,7 +86,7 @@ resource "aws_subnet" "public1" {
 
 resource "aws_subnet" "private1" {
   vpc_id     = aws_vpc.vpc.id
-  cidr_block = "10.0.3.0/24"
+  cidr_block = "10.1.3.0/24"
 
   availability_zone = data.aws_availability_zones.azs.names[0]
 
